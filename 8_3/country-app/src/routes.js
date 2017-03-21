@@ -4,10 +4,12 @@ import Navigation from './presentional/navigation.component';
 import Contact from './presentional/conact.component';
 import Home from './presentional/home.component';
 import NotFound from './presentional/not-found.component';
+import CountryFlagContainer from './containers/flag-container.component';
 
 export default (
     <Route path='/' component={Navigation}>
         <IndexRoute component={Home}/>
+        <Route path='countries' component={CountryFlagContainer}/>
         <Route path='contact' component={Contact}/>
         <Route path='*' component={NotFound}/>
     </Route>

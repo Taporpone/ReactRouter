@@ -6,7 +6,7 @@ import store from './store/store';
 import routes from './routes';
 
 render(
-    <Provider storage={store}>
+    <Provider store={store}>
         <Router history={hashHistory} routes={routes}/>
     </Provider>
     , document.getElementById('root')
