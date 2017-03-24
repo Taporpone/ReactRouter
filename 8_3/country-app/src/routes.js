@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import Navigation from './presentional/navigation.component';
 
-import Contact from './presentional/conact.component';
 import Home from './presentional/home.component';
 import NotFound from './presentional/not-found.component';
 import CountryFlagContainer from './containers/flag-container.component';
@@ -17,7 +16,6 @@ export default (
             <Route path='country/:id' component={CountryDetailsContainer} />
         </Route>
         <Route path='continents' component={ContinentsContainer} />
-        <Route path='contact' component={Contact} />
         <Route path='*' component={NotFound} />
     </Route>
 
